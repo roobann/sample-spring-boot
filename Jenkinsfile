@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/roobann/sample-spring-boot.git'  // Your Git repo URL
+                git branch: 'main', url: 'https://github.com/roobann/sample-spring-boot.git'  // Your Git repo URL
             }
         }
 
